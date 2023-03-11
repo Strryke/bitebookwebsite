@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Container from './container';
 import heroImg from '../public/img/hero.png';
-import Subscribe from './NewsletterSubscribe';
+import NewsletterSubscribe from './NewsletterSubscribe';
 
 export default function Hero() {
   return (
@@ -17,7 +17,7 @@ export default function Hero() {
               with the tools and knowledge to make informed and effortless food
               choices, so you can enjoy every meal.
             </p>
-            <Subscribe />
+            <NewsletterSubscribe />
             <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
               <a
                 href="https://web3templates.com/templates/nextly-landing-page-template-for-startups"
