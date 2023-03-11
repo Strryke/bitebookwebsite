@@ -1,14 +1,14 @@
-import Link from "next/link";
-import ThemeChanger from "./DarkSwitch";
-import { Disclosure } from "@headlessui/react";
+import Link from 'next/link';
+import ThemeChanger from './DarkSwitch';
+import { Disclosure } from '@headlessui/react';
 
 export default function Navbar() {
   const navigation = [
-    "Product",
-    "Features",
-    "Pricing",
-    "Company",
-    "Blog",
+    // "Product",
+    // "Features",
+    // "Pricing",
+    // "Company",
+    // "Blog",
   ];
 
   return (
@@ -22,25 +22,27 @@ export default function Navbar() {
                 <Link href="/">
                   <a className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
                     <span>
-                      <img
-                        src="/img/logo.svg"
+                      {/* <img
+                        src="/img/1.1-ICON.png"
                         alt="N"
                         width="32"
                         height="32"
-                        className="w-8"
-                      />
+                        className="w-20"
+                      /> */}
                     </span>
-                    <span>Nextly</span>
+                    <span>BiteBook</span>
                   </a>
                 </Link>
 
                 <Disclosure.Button
                   aria-label="Toggle Menu"
-                  className="px-2 py-1 ml-auto text-gray-500 rounded-md lg:hidden hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:text-gray-300 dark:focus:bg-trueGray-700">
+                  className="px-2 py-1 ml-auto text-gray-500 rounded-md lg:hidden hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:text-gray-300 dark:focus:bg-trueGray-700"
+                >
                   <svg
                     className="w-6 h-6 fill-current"
                     xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24">
+                    viewBox="0 0 24 24"
+                  >
                     {open && (
                       <path
                         fillRule="evenodd"

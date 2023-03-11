@@ -5,52 +5,52 @@ import {
   DeviceMobileIcon,
   AdjustmentsIcon,
   SunIcon,
-} from "@heroicons/react/outline";
+} from '@heroicons/react/outline';
 
-import benefitOneImg from "../public/img/benefit-one.png";
-import benefitTwoImg from "../public/img/benefit-two.png";
+import benefitOneImg from '../public/img/benefit-one.png';
+import benefitTwoImg from '../public/img/benefit-two.png';
 
 const benefitOne = {
-  title: "Highlight your benefits",
-  desc: "You can use this space to highlight your first benefit or a feature of your product. It can also contain an image or Illustration like in the example along with some bullet points.",
+  title: 'Save Your Favorite Restaurants',
+  desc: 'Easily update your food diary with your favorite restaurants. Keep track of your favourite dishes, prices, and more.',
   image: benefitOneImg,
   bullets: [
     {
-      title: "Understand your customers",
-      desc: "Then explain the first point breifly in one or two lines.",
+      title: 'Easy & Seamless',
+      desc: 'BiteBook pulls location data to help you fill in the details.',
       icon: <EmojiHappyIcon />,
     },
     {
-      title: "Improve acquisition",
-      desc: "Here you can add the next benefit point.",
+      title: 'Take Pictures',
+      desc: "What's a diary without pictures? Take pictures of your food and save them to your diary.",
       icon: <ChartSquareBarIcon />,
     },
     {
-      title: "Drive customer retention",
-      desc: "This will be your last bullet point in this section.",
+      title: 'Add Notes',
+      desc: 'Add notes to your diary entries to help you remember your experience.',
       icon: <CursorClickIcon />,
     },
   ],
 };
 
 const benefitTwo = {
-  title: "Offer more benefits here",
-  desc: "You can use this same layout with a flip image to highlight your rest of the benefits of your product. It can also contain an image or Illustration as above section along with some bullet points.",
+  title: 'View Your Food Diary',
+  desc: 'View your food diary to see your favorite restaurants, dishes, and more. Easily update your diary with new entries.',
   image: benefitTwoImg,
   bullets: [
     {
-      title: "Mobile Responsive Template",
-      desc: "Nextly is designed as a mobile first responsive template.",
+      title: 'Map View',
+      desc: 'Map view allows you to see all of your diary entries on a map.',
       icon: <DeviceMobileIcon />,
     },
     {
-      title: "Powered by Next.js & TailwindCSS",
-      desc: "This template is powered by latest technologies and tools.",
+      title: 'List View',
+      desc: 'Create separate lists for different restaurants or dishes.',
       icon: <AdjustmentsIcon />,
     },
     {
-      title: "Dark & Light Mode",
-      desc: "Nextly comes with a zero-config light & dark mode. ",
+      title: 'Filter Entries',
+      desc: 'Filter your diary entries by location, cuisine, price, and more.',
       icon: <SunIcon />,
     },
   ],
