@@ -9,7 +9,6 @@ const NewsletterSubscribe = () => {
       url={MAILCHIMP_URL}
       render={(props) => {
         const { subscribe, status, message } = props || {};
-        console.log(props);
         return (
           <NewsletterForm
             status={status}

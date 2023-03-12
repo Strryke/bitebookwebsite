@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import { decode } from 'html-entities';
 
-const NewsletterForm = ({ status, message, onValidated }) => {
+const NewsletterForm = ({ status, message, onValidated, ref }) => {
   const [error, setError] = useState(null);
   const [email, setEmail] = useState(null);
+  // const ref = useRef(null);
 
   /**
    * Handle form submit.
@@ -66,12 +67,14 @@ const NewsletterForm = ({ status, message, onValidated }) => {
             onChange={(event) => setEmail(event?.target?.value ?? '')}
             type="email"
             placeholder="Your email"
-            className="mr-2"
+            className="mr-2 border-black border-2 rounded-md px-4 py-2"
             onKeyUp={(event) => handleInputKeyEvent(event)}
+            id="email"
           />
-        </div>
-        <div className="button-wrap wp-block-button">
-          <button className="wp-block-button__link" onClick={handleFormSubmit}>
+          <button
+            className="wp-block-button__link px-8 py-2 text-lg font-medium text-center text-white bg-indigo-600 rounded-md"
+            onClick={handleFormSubmit}
+          >
             Submit
           </button>
         </div>
