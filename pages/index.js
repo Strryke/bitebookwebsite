@@ -38,7 +38,7 @@ export default function Home() {
         <title>BiteBook App</title>
         <meta
           name="description"
-          content="Nextly is a free landing page template built with next.js & Tailwind CSS"
+          content="BiteBook helps you remember your favourite eats and provides you with the tools to make effortless food choices"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
